@@ -24,8 +24,8 @@ p{color:var(--mut);line-height:1.5}
 <script>
 const q=new URLSearchParams(location.search),c=(q.get('c')||'').replace(/\D/g,'').slice(0,5),t=(q.get('t')||'').replace(/\D/g,'').slice(0,5);
 const ar=/^ar/i.test(navigator.language||''),T=ar?{
- msg:t?`صاحبك خلّص التحدي في ${Math.floor(t/60)}:${String(t%60).padStart(2,'0')} ⚔️ تقدر تغلبه؟`:'صاحبك بيتحداك في FlowLink ⚔️',
- open:'افتح التحدي',get:'حمّل اللعبة من Google Play',hint:'لو اللعبة لسه مش عندك: نزّلها، وبعدين افتح "تحدّى صاحبك" واكتب الكود ده.'}:{
+ msg:t?`أنهى صديقك التحدي في ${Math.floor(t/60)}:${String(t%60).padStart(2,'0')} ⚔️ هل تستطيع أن تغلبه؟`:'صديقك يتحداك في FlowLink ⚔️',
+ open:'افتح التحدي',get:'حمّل اللعبة من Google Play',hint:'إذا لم تكن اللعبة عندك: حمّلها، ثم افتح «تحدَّ صديقك» واكتب هذا الرمز.'}:{
  msg:t?`Your friend finished the challenge in ${Math.floor(t/60)}:${String(t%60).padStart(2,'0')} ⚔️ Can you beat them?`:'Your friend challenges you in FlowLink ⚔️',
  open:'Open the challenge',get:'Get the game on Google Play',hint:"Don't have the game yet? Install it, open “Challenge a friend” and enter this code."};
 document.documentElement.lang=ar?'ar':'en';document.dir=ar?'rtl':'ltr';
